@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "terrraform-remote-backend-s3"
-    key    = "dev/terraform.tfstate"
+    bucket = "lwp-labs-dev-remote-backend"
+    key    = "terraform.tfstate"
     region = "ap-south-1"
   }
 }

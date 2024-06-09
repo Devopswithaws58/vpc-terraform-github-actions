@@ -24,3 +24,7 @@ module "aws_lb" {
   dev_vpc_id             = module.vpc.dev_vpc_id
   docker_instances_ids   = module.dev_docker_server.docker-instances
 }
+
+module "s3_bucket" {
+  source = "./modules/S3"
+}
